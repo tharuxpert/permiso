@@ -1,10 +1,10 @@
 import AppKit
 import Foundation
 
-public struct PermisoHostApp: Sendable {
+public struct PermisoHostApp {
     public let displayName: String
     public let bundleURL: URL
-    @preconcurrency public let icon: NSImage
+    public let icon: NSImage
 
     public init(displayName: String, bundleURL: URL, icon: NSImage) {
         self.displayName = displayName
