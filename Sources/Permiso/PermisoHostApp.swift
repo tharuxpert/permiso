@@ -4,7 +4,7 @@ import Foundation
 public struct PermisoHostApp: Sendable {
     public let displayName: String
     public let bundleURL: URL
-    public let icon: NSImage
+    @preconcurrency public let icon: NSImage
 
     public init(displayName: String, bundleURL: URL, icon: NSImage) {
         self.displayName = displayName
